@@ -88,7 +88,7 @@ class Blockchain:
 
         return False
 
-    def new_block(self, proof: int, previous_hash: Optional[str]) -> Dict[str, Any]:
+    def new_block(self, proof: int, previous_hash=None) -> Dict[str, Any]:
         """
         Create a new Block in the Blockchain
         :param proof: The proof given by the Proof of Work algorithm
@@ -275,4 +275,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
     port = args.port
 
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='127.0.0.1', port=port)
