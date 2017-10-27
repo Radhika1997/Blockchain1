@@ -127,7 +127,7 @@ class Blockchain:
         return self.last_block['index'] + 1
 
     @property
-    def last_block(self) -> Dict[str: Any]:
+    def last_block(self) -> Dict[str, Any]:
         return self.chain[-1]
 
     @staticmethod
